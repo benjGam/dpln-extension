@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'extension-template-angular' title`, () => {
+  it(`should have the 'dpln-extension' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('extension-template-angular');
+    expect(app.title).toEqual('dpln-extension');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, extension-template-angular');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, dpln-extension'
+    );
   });
 });

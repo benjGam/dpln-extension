@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "extension-template-angular": {
+    "dpln-extension": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/extension-template-angular",
+            "outputPath": "dist/dpln-extension",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "extension-template-angular:build:production"
+              "buildTarget": "dpln-extension:build:production"
             },
             "development": {
-              "buildTarget": "extension-template-angular:build:development"
+              "buildTarget": "dpln-extension:build:development"
             }
           },
           "defaultConfiguration": "development"
